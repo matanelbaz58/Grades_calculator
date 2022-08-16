@@ -10,7 +10,7 @@ public class Main {
 
         allCourse.setSize(new Dimension(300,300));
         frame.add(allCourse);
-        
+
         frame.setVisible(true);
     }
 }
