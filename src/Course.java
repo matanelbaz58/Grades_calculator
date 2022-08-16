@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 public class Course extends JPanel implements ActionListener {
 
     private static double sum_average = 0;
-    private static double size_all =0 ;
+    private static double size_all = 0;
     private double grade;
     private double size;
     private static JTextField sum = new JTextField(14);
@@ -36,9 +36,6 @@ public class Course extends JPanel implements ActionListener {
     }
 
     public void init() {
-        //this.setPreferredSize(new Dimension(300, 300));
-        //this.setMinimumSize(new Dimension(300,300));
-
         this.setLayout(layout);
         this.add(name_label);
         this.add(name_text);
@@ -77,7 +74,7 @@ public class Course extends JPanel implements ActionListener {
             sum_average -= grade * size;
             size_all -= size;
             grade = 0;
-            size  = 0;
+            size = 0;
             name_text.setText("");
             grade_text.setText("");
             size_text.setText("");
@@ -88,7 +85,7 @@ public class Course extends JPanel implements ActionListener {
         if (e.getSource() == exit) {
             System.exit(0);
         }
-        average_field.setText(sum_average / size_all +"");
+        average_field.setText(sum_average / size_all + "");
     }
 }
 
